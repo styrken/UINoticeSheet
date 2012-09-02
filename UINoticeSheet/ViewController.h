@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)displaySimple:(id)sender;
+
 @end

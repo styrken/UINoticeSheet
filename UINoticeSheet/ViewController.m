@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NoticeSheet.h"
 
 @interface ViewController ()
 
@@ -14,25 +15,14 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (IBAction)displaySimple:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [NoticeSheet showNotice:@"Tester da lige" selector:@selector(doSomething) target:self];
 }
 
-- (void)viewDidUnload
+- (void) doSomething
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+    NSLog(@"Notice was pressed!");
 }
 
 @end
