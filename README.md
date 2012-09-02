@@ -15,7 +15,6 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
     [NoticeSheet showNotice:@"This is a notice sheet"];
 }
 
-
 - (IBAction)displaySample2:(id)sender
 {
     [NoticeSheet showNotice:@"This is a notice sheet that you can press" selector:@selector(doSomething) target:self];
