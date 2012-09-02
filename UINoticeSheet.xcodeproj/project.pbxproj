@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A8B8CCB15F3CEB60077C442 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8B8CCA15F3CEB60077C442 /* QuartzCore.framework */; };
+		3A8B8CCE15F3DD6B0077C442 /* NoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B8CCD15F3DD6B0077C442 /* NoticeView.m */; };
+		3A8B8CD315F3F29A0077C442 /* NoticeSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B8CD215F3F29A0077C442 /* NoticeSheet.m */; };
 		3B636AF515F0CDBB00B4A86F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B636AF415F0CDBB00B4A86F /* UIKit.framework */; };
 		3B636AF715F0CDBB00B4A86F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B636AF615F0CDBB00B4A86F /* Foundation.framework */; };
 		3B636AF915F0CDBB00B4A86F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B636AF815F0CDBB00B4A86F /* CoreGraphics.framework */; };
@@ -19,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A8B8CCA15F3CEB60077C442 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3A8B8CCC15F3DD6B0077C442 /* NoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoticeView.h; path = NoticeSheet/NoticeView.h; sourceTree = "<group>"; };
+		3A8B8CCD15F3DD6B0077C442 /* NoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoticeView.m; path = NoticeSheet/NoticeView.m; sourceTree = "<group>"; };
+		3A8B8CD115F3F29A0077C442 /* NoticeSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoticeSheet.h; path = NoticeSheet/NoticeSheet.h; sourceTree = "<group>"; };
+		3A8B8CD215F3F29A0077C442 /* NoticeSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoticeSheet.m; path = NoticeSheet/NoticeSheet.m; sourceTree = "<group>"; };
 		3B636AF015F0CDBB00B4A86F /* UINoticeSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UINoticeSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B636AF415F0CDBB00B4A86F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B636AF615F0CDBB00B4A86F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8B8CCB15F3CEB60077C442 /* QuartzCore.framework in Frameworks */,
 				3B636AF515F0CDBB00B4A86F /* UIKit.framework in Frameworks */,
 				3B636AF715F0CDBB00B4A86F /* Foundation.framework in Frameworks */,
 				3B636AF915F0CDBB00B4A86F /* CoreGraphics.framework in Frameworks */,
@@ -49,9 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A8B8CC515F3C1BB0077C442 /* NoticeSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B8CD115F3F29A0077C442 /* NoticeSheet.h */,
+				3A8B8CD215F3F29A0077C442 /* NoticeSheet.m */,
+				3A8B8CCC15F3DD6B0077C442 /* NoticeView.h */,
+				3A8B8CCD15F3DD6B0077C442 /* NoticeView.m */,
+			);
+			name = NoticeSheet;
+			sourceTree = "<group>";
+		};
 		3B636AE515F0CDBB00B4A86F = {
 			isa = PBXGroup;
 			children = (
+				3A8B8CCA15F3CEB60077C442 /* QuartzCore.framework */,
 				3B636AFA15F0CDBB00B4A86F /* UINoticeSheet */,
 				3B636AF315F0CDBB00B4A86F /* Frameworks */,
 				3B636AF115F0CDBB00B4A86F /* Products */,
@@ -79,6 +100,7 @@
 		3B636AFA15F0CDBB00B4A86F /* UINoticeSheet */ = {
 			isa = PBXGroup;
 			children = (
+				3A8B8CC515F3C1BB0077C442 /* NoticeSheet */,
 				3B636B0315F0CDBB00B4A86F /* AppDelegate.h */,
 				3B636B0415F0CDBB00B4A86F /* AppDelegate.m */,
 				3B636B0615F0CDBB00B4A86F /* ViewController.h */,
@@ -168,6 +190,8 @@
 				3B636B0115F0CDBB00B4A86F /* main.m in Sources */,
 				3B636B0515F0CDBB00B4A86F /* AppDelegate.m in Sources */,
 				3B636B0815F0CDBB00B4A86F /* ViewController.m in Sources */,
+				3A8B8CCE15F3DD6B0077C442 /* NoticeView.m in Sources */,
+				3A8B8CD315F3F29A0077C442 /* NoticeSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +315,7 @@
 				3B636B1315F0CDBB00B4A86F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
