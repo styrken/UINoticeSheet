@@ -5,7 +5,7 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
 
 #### How to
 
-1 Add QuartzCore framework to your project. This is needed to draw a nice shadow below the notice
+1. Add QuartzCore framework to your project. This is needed to draw a nice shadow below the notice
 2. Copy the NoticeSheet folder to your project
 3. #import "NoticeSheet.h"
 4. Start displaying the sheets
