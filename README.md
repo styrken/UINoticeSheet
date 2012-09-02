@@ -5,9 +5,10 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
 
 #### How to
 
-1. Copy the NoticeSheet folder to your project
-2. #import "NoticeSheet.h"
-3. Start displaying the sheets
+1 Add QuartzCore framework to your project. This is needed to draw a nice shadow below the notice
+2. Copy the NoticeSheet folder to your project
+3. #import "NoticeSheet.h"
+4. Start displaying the sheets
 
 ````objective-c
 - (IBAction)displaySample1:(id)sender
@@ -26,10 +27,14 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
 }
 ````
 
+Example
+-------------------------
+
 Look and feel can easily be modified by modifing setupSubviews in NoticeView class.
 
-#### Other ways of invoking a sheet
+![image1](https://raw.github.com/styrken/UINoticeSheet/master/screenshot.png)
 
+#### Other ways of invoking a sheet
 
 ````objective-c
 /**
