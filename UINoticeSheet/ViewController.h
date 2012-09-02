@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)displaySimple:(id)sender;
+- (IBAction)displaySample1:(id)sender;
+- (IBAction)displaySample2:(id)sender;
 
 @end
