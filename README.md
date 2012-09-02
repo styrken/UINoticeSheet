@@ -9,6 +9,8 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
 2. #import "NoticeSheet.h"
 3. Start displaying the sheets
 
+Look and feel can easily be modified by modifing setupSubviews in NoticeView class.
+
 ````objective-c
 - (IBAction)displaySample1:(id)sender
 {
