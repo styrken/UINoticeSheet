@@ -26,14 +26,6 @@ An UINoticeSheet for the iOS platform. Shows a noticesheet at top of screen.
     NSLog(@"Notice was pressed!");
 }
 ````
-
-Example
--------------------------
-
-Look and feel can easily be modified by modifing setupSubviews in NoticeView class.
-
-![image1](https://raw.github.com/styrken/UINoticeSheet/master/screenshot.png)
-
 #### Other ways of invoking a sheet
 
 ````objective-c
@@ -72,3 +64,11 @@ Look and feel can easily be modified by modifing setupSubviews in NoticeView cla
  */
 + (void) showNotice:(NSString *)text selector:(SEL)selector target:(id)target inView:(UIView *)view;
 ```` 
+
+Example
+-------------------------
+
+Look and feel can easily be modified by modifing setupSubviews in NoticeView class.
+
+![image1](https://raw.github.com/styrken/UINoticeSheet/master/screenshot.png)
+
